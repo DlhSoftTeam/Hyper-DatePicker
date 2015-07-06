@@ -1,0 +1,14 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+}
+h1 {
+    margin: 16px;
+    margin-bottom: 0px;
+}
+p {
+    margin: 4px 16px;
+}
+.Area {
+    display: inline-block; 
+    margin: 16px;
+}
