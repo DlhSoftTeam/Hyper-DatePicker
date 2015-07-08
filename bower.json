@@ -1,0 +1,26 @@
+{
+    "name": "Hyper-DatePicker",
+    "version": "5.0.0",
+    "homepage": "https://github.com/DlhSoftTeam/Hyper-DatePicker",
+    "authors": [
+        "DlhSoft <contact@dlhsoft.com>"
+    ],
+    "description": "Date picker and related controls for HTML5 and JavaScript",
+    "main": [
+        "DlhSoft.Data.DatePicker.HTML.Controls.js",
+        "DlhSoft.Data.DatePicker.HTML.Controls.ts",
+        "DlhSoft.Data.DatePicker.Angular.Directives.js"
+    ],
+    "keywords": [
+        "Calendar",
+        "DatePicker"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

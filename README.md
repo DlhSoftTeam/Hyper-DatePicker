@@ -1,14 +1,22 @@
 ﻿# Hyper-DatePicker
-Date picker and related controls for HTML5 and JavaScript®
+Date picker and related controls for HTML5 and JavaScript® with optional TypeScript support and AngularJS extensions
 
 ## DatePicker components
 
-* TypeScript: DlhSoft.Data.DatePicker.HTML.Controls.ts
-* JavaScript: DlhSoft.Data.DatePicker.HTML.Controls.js
+* JavaScript: <code>DlhSoft.Data.DatePicker.HTML.Controls.js</code>
+* TypeScript: <code>DlhSoft.Data.DatePicker.HTML.Controls.ts</code>
+* AngularJS:  <code>DlhSoft.Data.DatePicker.Angular.Directives.js</code>
 
-## Sample application
+## JavaScript® sample application
 
-* HTML:       index.html
-* CSS:        app.css
-* TypeScript: app.ts
-* JavaScript: app.js
+* HTML:       <code>index.html</code>
+* CSS:        <code>app.css</code>
+* TypeScript: <code>app.ts</code>
+* JavaScript: <code>app.js</code>
+
+## AngularJS sample application
+
+* HTML:       <code>index-angular.html</code>
+* CSS:        <code>app.css</code>
+* TypeScript: <code>app-angular.ts</code>
+* JavaScript: <code>app-angular.js</code>

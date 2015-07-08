@@ -24,9 +24,7 @@ window.onload = function () {
     var calendar = Calendar.initialize(document.querySelector("#calendar"), calendarSelectedDate, calendarSettings);
 
     // Optionally, further initialize selected dates.
-    // calendar.setValueRanges([{ start: new Date(2014, 02 - 1, 19), finish: new Date(2014, 02 - 1, 22) }, { start: new Date(2014, 02 - 1, 25), finish: new Date(2014, 02 - 1, 26) }]);
-    var secondDuration = 1000, minuteDuration = 60 * secondDuration, hourDuration = 60 * minuteDuration;
-
+    // calendar.setValueRanges([{ start: new Date(2014, 2 - 1, 19), finish: new Date(2014, 2 - 1, 22) }, { start: new Date(2014, 2 - 1, 25), finish: new Date(2014, 2 - 1, 26) }]);
     var datePickerValue = new Date(2014, 2 - 1, 19);
     var datePickerSettings = {
         // Optionally, initialize a specific theme (supported values: Modern, Standard).

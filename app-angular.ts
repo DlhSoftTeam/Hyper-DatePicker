@@ -1,10 +1,14 @@
-/// <reference path='./DlhSoft.Data.HTML.DatePicker.Controls.ts'/>
+/// <reference path='./DlhSoft.Data.DatePicker.HTML.Controls.ts'/>
+
 import Calendar = DlhSoft.Controls.Calendar;
 import DatePicker = DlhSoft.Controls.DatePicker;
 
-window.onload = () => {
+declare var angular;
+angular.module("Sample", ["DlhSoft.Data.Directives"])
+.controller("MainController", ["$scope", function ($scope) {
     // Initialize the components.
     var calendarSelectedDate = new Date(2014, 2 - 1, 19);
+    $scope.calendarSelectedDate = calendarSelectedDate;
     var calendarSettings = <Calendar.Settings>{
         // Optionally, initialize a specific theme (supported values: Modern, Standard).
         // theme: "Standard",
@@ -17,13 +21,12 @@ window.onload = () => {
         // Optionally, disable specific calendar days based on date values.
         disabledDateSelector: (date: Date): boolean => { return date.getDay() == 6; },
         // Optionally, handle selected date changes.
-        // selectedDateChangeHandler: function (date: Date) { alert("Selected date changed to " + date.toDateString() + "."); }
+        // selectedDateChangeHandler: function (date: Date) { console.log("Calendar selected date changed to " + date.toDateString() + "."); }
     };
-    var calendar = Calendar.initialize(<HTMLElement>document.querySelector("#calendar"), calendarSelectedDate, calendarSettings);
-    // Optionally, further initialize selected dates.
-    // calendar.setValueRanges([{ start: new Date(2014, 2 - 1, 19), finish: new Date(2014, 2 - 1, 22) }, { start: new Date(2014, 2 - 1, 25), finish: new Date(2014, 2 - 1, 26) }]);
+    $scope.calendarSettings = calendarSettings;
 
     var datePickerValue = new Date(2014, 2 - 1, 19);
+    $scope.datePickerValue = datePickerValue;
     var datePickerSettings = <DatePicker.Settings>{
         // Optionally, initialize a specific theme (supported values: Modern, Standard).
         // theme: "Standard",
@@ -35,5 +38,6 @@ window.onload = () => {
         // Optionally, disable specific calendar days based on date values.
         disabledDateSelector: (date: Date): boolean => { return date.getDay() == 6; }
     };
-    var datePicker = DatePicker.initialize(<HTMLInputElement>document.querySelector("#datePicker"), datePickerValue, datePickerSettings);
-};
+    $scope.datePickerSettings = datePickerSettings;
+    $scope.datePickerChangeHandler = function (value: Date): void { console.log("DatePicker date changed to: " + value); }
+}]);
