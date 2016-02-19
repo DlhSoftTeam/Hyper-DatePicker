@@ -1,4 +1,4 @@
-/// <reference path='./DlhSoft.Data.HTML.DatePicker.Controls.ts'/>
+/// <reference path='./DlhSoft.Data.DatePicker.HTML.Controls.ts'/>
 var Calendar = DlhSoft.Controls.Calendar;
 var DatePicker = DlhSoft.Controls.DatePicker;
 

@@ -1,4 +1,4 @@
-/// <reference path='./DlhSoft.Data.HTML.DatePicker.Controls.ts'/>
+/// <reference path='./DlhSoft.Data.DatePicker.HTML.Controls.ts'/>
 import Calendar = DlhSoft.Controls.Calendar;
 import DatePicker = DlhSoft.Controls.DatePicker;
 
