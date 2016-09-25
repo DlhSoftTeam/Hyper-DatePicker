@@ -20,3 +20,17 @@ Date picker and related controls for HTML5 and JavaScript® with optional TypeSc
 * CSS:        <code>app.css</code>
 * TypeScript: <code>app-angular.ts</code>
 * JavaScript: <code>app-angular.js</code>
+
+## Package installation
+ * NuGet: 
+   ```
+   Install-Package DlhSoft.HyperDatePicker
+   ```
+ * Bower:
+   ```
+   bower install http://DlhSoft.com/Packages/DlhSoft.HyperDatePicker.zip
+   ```
+ * Node:
+   ```
+   npm install http://DlhSoft.com/Packages/DlhSoft.HyperDatePicker.tar
+   ```
